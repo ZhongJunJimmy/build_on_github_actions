@@ -9,6 +9,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
       - run: cd koa_project
       - run: npm install
       - run: npm install -g pkg
