@@ -18,3 +18,4 @@ jobs:
           npm install
           npm install -g pkg
           pkg app.js
+          ls -al
