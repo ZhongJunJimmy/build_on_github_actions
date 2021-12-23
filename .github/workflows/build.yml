@@ -18,7 +18,7 @@ jobs:
           npm install
           npm install -g pkg
           pkg app.js
-      - uses: actions/download-artifact@v2
+      - uses: actions/upload-artifact@v2
         with:
-          name: for mac
+          name: app-macos
           path: ./koa_project/app-macos
