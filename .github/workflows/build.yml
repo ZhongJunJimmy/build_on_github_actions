@@ -7,9 +7,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: cd koa_project
-      - name: npm install Koa project
       - run: npm install
-      - name: List files in the repository
       - run: npm install -g pkg
       - name: starting build
       - run: pkg app.js
