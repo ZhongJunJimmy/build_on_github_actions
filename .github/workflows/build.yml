@@ -4,6 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: macos-11
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - run: cd koa_project
       - run: npm install
       - run: npm install -g pkg
