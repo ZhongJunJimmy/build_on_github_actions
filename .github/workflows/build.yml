@@ -2,7 +2,7 @@ name: build Koa project
 on: [push]
 jobs:
 	Explore-GitHub-Actions:
-    runs-on: macos-11
+    runs-on: ubuntu-latest
     steps:
       - run: ls -al
       - run: cd koa_project
