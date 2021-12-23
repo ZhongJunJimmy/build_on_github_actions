@@ -4,6 +4,7 @@ jobs:
 	Explore-GitHub-Actions:
     runs-on: macos-11
     steps:
+      - run: ls -al
       - run: cd koa_project
       - run: npm install -g pkg
       - run: pkg app.js
