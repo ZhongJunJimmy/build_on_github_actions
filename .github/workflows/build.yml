@@ -12,8 +12,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: change working directory
+      - name: npm install
         working-directory: ./koa_project
-      - run: npm install
-      - run: npm install -g pkg
-      - run: pkg app.js
+        run: npm install
+      - name: npm install
+        working-directory: ./koa_project
+        run: npm install -g pkg
+      - name: npm install
+        working-directory: ./koa_project
+        run: pkg app.js
