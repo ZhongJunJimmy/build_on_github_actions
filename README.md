@@ -5,7 +5,7 @@ Hey Guys, I want to make a sample that auto completion your workflow by github a
 1. Creating a `.github/workflows` directory in your repository if this directory does not already exist.
 2. In the `.github/workflows` directory, creating a file named `github-actions-demo.yml` or any file name you want to named. But the extension name must be `.yml`.
 3. Edit you workflow step. For example in this repository:
-    ```
+    ``` 
     name: github-actions-demo
     on: [push]
     jobs:
