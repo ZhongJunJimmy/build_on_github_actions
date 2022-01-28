@@ -1,6 +1,6 @@
-catalog-api:
+koa_project:
     image: zhongjunjimmy/koa_project:0.0.2
     expose:
-      - "3000"
+    - "3000"
     ports:
-      - "3000:3000"
+    - "3000:3000"
