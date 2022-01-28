@@ -1,5 +1,5 @@
 catalog-api:
-    image: zhongjunjimmy/koa_project:0.0.1
+    image: zhongjunjimmy/koa_project:0.0.2
     expose:
       - "3000"
     ports:

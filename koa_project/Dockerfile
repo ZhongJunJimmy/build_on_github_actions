@@ -1,8 +1,8 @@
 From ubuntu:20.04
 
 WORKDIR /app/
-COPY app-linux /app/
-RUN chmod  777 /app/app-linux
+COPY app /app/
+RUN chmod  777 /app/app
 EXPOSE 3000
 
-CMD ["./app-linux"]
+CMD ["./app"]
