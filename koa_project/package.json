@@ -4,7 +4,10 @@
   "description": "koa project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "prebuild": "pkg -t node12-linux app.js",
+    "build-docker-image":"build -t zhongjunjimmy/koa_project:0.0.2 .",
+    "save-image-2-tar":"docker save zhongjunjimmy/koa_project:0.0.1 > koa_project.tar"
   },
   "author": "ZJ.Jimmy",
   "license": "ISC",

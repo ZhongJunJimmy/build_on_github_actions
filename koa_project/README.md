@@ -2,7 +2,7 @@
 
 Sharing how to build docker image
 
-1. Edit Dockerfile
+## Edit Dockerfile
 
 
     Use `vi Dockerfile` create a Docker script file that contents like following block
@@ -16,33 +16,35 @@ Sharing how to build docker image
 
     CMD ["./app-linux"]
     ```
-    - From: base image
-    - WORKDIR: work directory
-    - COPY: copy current file into docker image specify path
-    - RUN: run linux cmd
-    - EXPOSE: Set the port forwarding
-    - CMD: running the following command when image had been run in docker
+- From: base image
+- WORKDIR: work directory
+- COPY: copy current file into docker image specify path
+- RUN: run linux cmd
+- EXPOSE: Set the port forwarding
+- CMD: running the following command when image had been run in docker
 
-2. run docker build command
+## Run docker build command
 
 After edit the Dockerfile and solve it. Run the following command.
 `docker build -t release/koa_project:0.0.2 .`
 It's will build a image in docker daemon
 
 
-3. save image to .tar file
+## Save image to .tar file
 
 Run following command to save a image in ".tar" file
-`docker save release/koa_project:0.0.2 > koa_project.tar`
+`docker save zhongjunjimmy/koa_project:0.0.1 > koa_project.tar`
 
-4. load image into docker
+## load image into docker
 
 
 Running following command to load image into docker
 `docker load -i koa_project.tar`
 
-5. run the image
+## Run the image
     - Checking image has been load in docker successfully. Run following cmd.
         `docker images`
-    - run image and specific port
-        `sudo docker run -d -p 3000:3000 release/koa_project:0.0.2`
+    - run image and specific port by following cmd
+        `sudo docker run -d -p 3000:3000 zhongjunjimmy/koa_project:0.0.1`
+
+## Push image to dockerhub
