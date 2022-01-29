@@ -17,16 +17,13 @@ jobs:
         run: |
           npm install
           npm install -g pkg
-          pkg app.js
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Executable file for MAC OS
-          path: ./koa_project/app-macos
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Executable file for Windows
-          path: ./koa_project/app-win.exe
+          npm run prebuild
       - uses: actions/upload-artifact@v2
         with:
           name: Executable file for Linux
-          path: ./koa_project/app-linux
+          path: ./koa_project/app
+      - name: build docker image
+        working-directory: ./koa_project
+        run: |
+          docker build -t release/koa_project:test .
+          docker save release/koa_project:test > koa_project.tar
