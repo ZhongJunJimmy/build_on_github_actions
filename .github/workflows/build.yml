@@ -18,7 +18,7 @@ jobs:
           npm install
           npm install -g pkg
           npm run prebuild
-          ls ${{ github.workspace }}
+          ls 
       - uses: actions/upload-artifact@v2
         with:
           name: Executable file for Linux
