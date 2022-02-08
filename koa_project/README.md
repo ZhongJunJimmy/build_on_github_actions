@@ -16,7 +16,7 @@ Sharing how to build docker image
 
     CMD ["./app"]
     ```
-- From: base image
+- From: base image (Ref: Docker Officail Image)
 - WORKDIR: work directory
 - COPY: copy current file into docker image specify path
 - RUN: run linux cmd
@@ -82,3 +82,7 @@ Finally, run `docker-compose up -d` to download and run image on local side.
 ## Try it 
 Installing this sample projrect by running following command
 `curl -l https://raw.githubusercontent.com/ZhongJunJimmy/github_actions/main/koa_project/installer.sh | sudo sh -s`
+
+## Reference
+[Dockerhub Offcial Image](https://hub.docker.com/search?type=image&image_filter=official)
+[Docker-compose](https://docs.docker.com/compose/)
