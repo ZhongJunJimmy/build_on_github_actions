@@ -71,9 +71,14 @@ koa_project:
 - expose: The needed port for this image
 - ports: It will be exposed to the host machine to a random port or a given port.
 
-Run the following cmd to download image from dockerhub and load it in docker service after save the docker-compose.yml file.
+Run the following cmd to download and run image from dockerhub and load it in docker service after save the docker-compose.yml file.
     `docker-compose up -d`
 
+## Edit install shell script for linux OS
 
-## Try to install this sample projrct 
+Please reference the file `installer.sh`. It's will check docker and docker-compose peorcess, and download `docker-compose.yml` from github.
+Finally, run `docker-compose up -d` to download and run image on local side.
+
+## Try it 
+Installing this sample projrect by running following command
 `curl -l https://raw.githubusercontent.com/ZhongJunJimmy/github_actions/main/koa_project/installer.sh | sudo sh -s`
