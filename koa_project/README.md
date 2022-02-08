@@ -35,7 +35,7 @@ It's will build a image in docker daemon
 Run following command to save a image in ".tar" file
     `docker save zhongjunjimmy/koa_project:0.0.1 > koa_project.tar`
 
-## load image into docker
+## Load image into docker
 
 
 Running following command to load image into docker
