@@ -1,5 +1,8 @@
 name: build Koa project
-on: [push]
+on: 
+  push:
+    paths:
+      - './koa_project/app.js'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
