@@ -2,7 +2,7 @@ var koa = require('koa');
 var app = new koa();
 
 app.use(function* (){
-   this.body = 'Hello world!';
+   this.body = 'The project to practice how to use Github Action and Docker!';
 });
 
 app.listen(3000, function(){
