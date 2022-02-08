@@ -84,5 +84,5 @@ Installing this sample projrect by running following command
 `curl -l https://raw.githubusercontent.com/ZhongJunJimmy/github_actions/main/koa_project/installer.sh | sudo sh -s`
 
 ## Reference
-[Dockerhub Offcial Image](https://hub.docker.com/search?type=image&image_filter=official)
-[Docker-compose](https://docs.docker.com/compose/)
+- [Dockerhub Offcial Image](https://hub.docker.com/search?type=image&image_filter=official)
+- [Docker-compose](https://docs.docker.com/compose/)
