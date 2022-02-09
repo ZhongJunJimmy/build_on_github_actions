@@ -3,19 +3,17 @@
 Sharing how to build docker image
 
 ## Edit Dockerfile
+Use `vi Dockerfile` create a Docker script file that contents like following block
+```
+From ubuntu:20.04
 
+WORKDIR /app/
+COPY app-linux /app/
+RUN chmod  777 /app/app
+EXPOSE 3000
 
-    Use `vi Dockerfile` create a Docker script file that contents like following block
-    ```
-    From ubuntu:20.04
-
-    WORKDIR /app/
-    COPY app-linux /app/
-    RUN chmod  777 /app/app
-    EXPOSE 3000
-
-    CMD ["./app"]
-    ```
+CMD ["./app"]
+```
 - From: base image (Ref: Docker Officail Image)
 - WORKDIR: work directory
 - COPY: copy current file into docker image specify path
@@ -57,14 +55,12 @@ Sqmple:
 
 ## Edit docker-compose.yml
 ```
-
 koa_project:
     image: zhongjunjimmy/koa_project:0.0.2
     expose:
     - "3000"
     ports:
     - "3000:3000"
-
 ```
 
 - image: Name of your dockerhub repository and tag
