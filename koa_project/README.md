@@ -14,6 +14,7 @@ EXPOSE 3000
 
 CMD ["./app"]
 ```
+Description:
 - From: base image (Ref: Docker Officail Image)
 - WORKDIR: work directory
 - COPY: copy current file into docker image specify path
@@ -48,10 +49,9 @@ Running following command to load image into docker
 ## Push image to dockerhub
 First create a dockerhub account.Then create a new repository on your dockerhub account.
 For example, I create a repository named "koa_project". 
-Run the following command to push the image on dockerhub repository
-    `docker push NAME[:tag]`
-Sqmple: 
-    `docker push zhongjunjimmy/koa_project:0.0.1`
+Run the following command to push the image on dockerhub repository`docker push NAME[:tag]`
+
+e.g., `docker push zhongjunjimmy/koa_project:0.0.1`
 
 ## Edit docker-compose.yml
 ```
@@ -77,6 +77,7 @@ Finally, run `docker-compose up -d` to download and run image on local side.
 
 ## Try it 
 Installing this sample projrect by running following command
+
 `curl -l https://raw.githubusercontent.com/ZhongJunJimmy/github_actions/main/koa_project/installer.sh | sudo sh -s`
 
 ## Reference
