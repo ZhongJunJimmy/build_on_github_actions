@@ -1,5 +1,5 @@
 koa_project:
-    image: zhongjunjimmy/koa_project:0.0.2
+    image: zhongjunjimmy/koa_project
     expose:
     - "3000"
     ports:

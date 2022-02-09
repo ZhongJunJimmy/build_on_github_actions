@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "prebuild": "pkg -t node12-linux app.js",
-    "build-docker-image":"docker build -t zhongjunjimmy/koa_project:0.0.2 .",
-    "save-image-2-tar":"docker save zhongjunjimmy/koa_project:0.0.2 > koa_project.tar"
+    "build": "pkg -t node12-linux-x64 app.js",
+    "build-docker-image": "docker build -t zhongjunjimmy/koa_project:0.0.3 .",
+    "save-image-2-tar": "docker save zhongjunjimmy/koa_project:0.0.3 > koa_project.tar"
   },
   "author": "ZJ.Jimmy",
   "license": "ISC",

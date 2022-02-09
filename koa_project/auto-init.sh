@@ -11,7 +11,6 @@ echo "                     --                           "
 echo -e "\033[36m(1/4)---- Check your system type ----\033[0m"
 if [ "$(uname)" = "Darwin" ]
 	then SYS="OS X"
-	echo -e "\033[32mThe installation process is canceled because the current OS is not CentOS or Ubuntu. Remind you to use CentOS 8.3.2011 or Ubuntu 20.04.1 LTS or a later version \033[0m"	
 elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
 	SYS="Linux"
 	echo -e "\033[32mThe installation process is canceled because the current OS is not MAC OS\033[0m"
